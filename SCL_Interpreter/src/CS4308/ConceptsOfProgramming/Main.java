@@ -3,7 +3,7 @@ package CS4308.ConceptsOfProgramming;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner("C:\\Users\\heath\\OneDrive\\Desktop\\testing.txt"); // here we scan the given file
+        Scanner scan = new Scanner("C:\\Users\\heath\\OneDrive\\Desktop\\testing.scl"); // here we scan the given file
 
         String fileName = "testing.txt"; // name of the file
 
