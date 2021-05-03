@@ -128,7 +128,7 @@ public class parser {
 
     //method to break up the body block
     public void breakUpBodyBlock(){
-        System.out.println("in breakup body block");
+        //System.out.println("in breakup body block");
         ArrayList<String> currentSentenceTokens = new ArrayList<>();
         ArrayList<String> currentSentenceLexemes = new ArrayList<>();
         //for loop to iterate through all the tokens within the body block
@@ -155,7 +155,7 @@ public class parser {
    public identifier identLookup(String name){
 
             for (identifier i : identTable) {
-                if (i.name == name) {
+                if (i.name.equals(name)) {
                     return i;
                 }
             }
@@ -208,6 +208,22 @@ public class parser {
        }
 
         System.out.println();
+    }
+
+    public ArrayList<ArrayList<String>> getVarTokens(){
+        return varBlockTokens;
+    }
+    public ArrayList<ArrayList<String>> getVarLex(){
+        return varBlockLex;
+    }
+    public ArrayList<ArrayList<String>> getBodyTokens(){
+       return bodyBlockTokens;
+    }
+    public ArrayList<ArrayList<String>> getBodyLex(){
+        return bodyBlockLex;
+    }
+    public identifier[] getIdentTable(){
+       return identTable;
     }
 
 //DATA DECLARATION

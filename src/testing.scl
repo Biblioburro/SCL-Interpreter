@@ -1,7 +1,7 @@
 program Module3_Program1;
 var
     Num1, Num2, Sum : Integer;
-    TestNum : Integer;
+
 Begin {no semicolon}
 	Write('Input number 1:');
 	Readln(Num1);
